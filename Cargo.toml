@@ -1,0 +1,13 @@
+[package]
+name = "jma-radar-rs"
+version = "0.1.0"
+edition = "2021"
+description = "Pure Rust decoder and renderer for JMA polar-coordinate radar GRIB2 files"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+image = { version = "0.25", default-features = false, features = ["png"] }
+serde = { version = "1", features = ["derive"] }
+tar = "0.4"
+thiserror = "2"
